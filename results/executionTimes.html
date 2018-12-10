@@ -1,0 +1,2147 @@
+<!DOCTYPE html> <body> 
+<h1> Semantic Property Path Benchmark Execution Times </h1>
+This table holds the average execution time for each of the 236 benchmark queries <br><br>
+<fieldset>
+  <legend>Color Code:</legend>
+  <p>  white: Result sets are complete and correct. </p>
+  <p> <span style = "background-color:yellow"> yellow</span>: Result sets are incomplete but correct. </p>
+  <p> <span style = "background-color:red"> red</span>: Result sets are incorrect or incomplete and incorrect. </p>
+  <p> <span style = "background-color:grey"> grey</span>: Error during execution of query. </p>
+</fieldset>
+<br>
+<table border='1'> 
+ <tr> 
+ <th> Query </th>
+ <th> Blazegraph </th>
+ <th> AllegroGraph </th> 
+<th> Virtuoso </th> 
+ <th> RDF4J </th> 
+ <th> Fuseki </th> 
+ </tr> 
+<tr> 
+ <td> TPTinverseOneMatch1.sparql </td> 
+ <td> 20.125 </td> 
+<td> 27.25 </td> 
+<td> 5.0 </td> 
+<td> 6.625 </td> 
+<td> 11.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinverseSelfloop2.sparql </td> 
+ <td> 21.625 </td> 
+<td> 25.25 </td> 
+<td> 5.125 </td> 
+<td> 6.125 </td> 
+<td> 12.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinverseNoSubject3.sparql </td> 
+ <td> 33.25 </td> 
+<td> 27.25 </td> 
+<td> 6.125 </td> 
+<td> 5.0 </td> 
+<td> 12.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinverseNoObject4.sparql </td> 
+ <td> 32.5 </td> 
+<td> 27.5 </td> 
+<td> 5.375 </td> 
+<td> 5.0 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinverseNoObjectSubject5.sparql </td> 
+ <td> 29.25 </td> 
+<td> 24.125 </td> 
+<td> 4.375 </td> 
+<td> 5.125 </td> 
+<td> 8.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinverseNoPredicate6.sparql </td> 
+ <td> 29.875 </td> 
+<td> 25.875 </td> 
+<td> 4.75 </td> 
+<td> 4.875 </td> 
+<td> 8.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPTsequenceOneMatch7.sparql </td> 
+ <td> 19.875 </td> 
+<td> 25.375 </td> 
+<td> 5.25 </td> 
+<td> 4.625 </td> 
+<td> 8.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPTsequenceSelfloop8.sparql </td> 
+ <td> 21.25 </td> 
+<td> 26.75 </td> 
+<td> 5.125 </td> 
+<td> 5.5 </td> 
+<td> 10.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPTsequenceCycle9.sparql </td> 
+ <td> 19.75 </td> 
+<td> 25.75 </td> 
+<td> 4.375 </td> 
+<td> 5.625 </td> 
+<td> 22.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTsequenceNoSubject10.sparql </td> 
+ <td> 29.25 </td> 
+<td> 23.5 </td> 
+<td> 5.25 </td> 
+<td> 5.0 </td> 
+<td> 18.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTsequenceNoObject11.sparql </td> 
+ <td> 29.25 </td> 
+<td> 24.75 </td> 
+<td> 5.5 </td> 
+<td> 6.125 </td> 
+<td> 11.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTsequenceNoObjectSubject12.sparql </td> 
+ <td> 30.0 </td> 
+<td> 25.5 </td> 
+<td> 6.125 </td> 
+<td> 6.0 </td> 
+<td> 11.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPTsequenceNoPredicate13.sparql </td> 
+ <td> 30.0 </td> 
+<td> 24.375 </td> 
+<td> 5.625 </td> 
+<td> 4.5 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPTalternativeOneMatch14.sparql </td> 
+ <td> 23.625 </td> 
+<td> 24.0 </td> 
+<td> 5.375 </td> 
+<td> 4.375 </td> 
+<td> 7.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPTalternativeSelfloop15.sparql </td> 
+ <td> 22.5 </td> 
+<td> 23.875 </td> 
+<td> 3.875 </td> 
+<td> 6.0 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPTalternativeNoSubject16.sparql </td> 
+ <td> 34.375 </td> 
+<td> 24.75 </td> 
+<td> 5.75 </td> 
+<td> 5.375 </td> 
+<td> 7.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPTalternativeNoObject17.sparql </td> 
+ <td> 29.375 </td> 
+<td> 23.0 </td> 
+<td> 4.625 </td> 
+<td> 4.625 </td> 
+<td> 9.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTalternativeNoObjectSubject18.sparql </td> 
+ <td> 29.125 </td> 
+<td> 25.0 </td> 
+<td> 5.25 </td> 
+<td> 4.0 </td> 
+<td> 7.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPTalternativeNoPredicate19.sparql </td> 
+ <td> 30.875 </td> 
+<td> 25.125 </td> 
+<td> 6.0 </td> 
+<td> 6.125 </td> 
+<td> 8.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPTexistOneMatch20.sparql </td> 
+ <td> 39.0 </td> 
+<td> 37.625 </td> 
+<td> 6.25 </td> 
+<td> 4.875 </td> 
+<td> 8.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTexistSelfloop21.sparql </td> 
+ <td> 40.5 </td> 
+<td> 29.0 </td> 
+<td> 4.625 </td> 
+<td bgcolor='red'> 4.75 </td> 
+<td> 7.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPTexistNoSubjectObjectPredicate22.sparql </td> 
+ <td> 51.875 </td> 
+<td> 25.5 </td> 
+<td> 5.375 </td> 
+<td> 5.75 </td> 
+<td> 6.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPTexistSubjectObjectSame23.sparql </td> 
+ <td> 44.125 </td> 
+<td bgcolor='red'> 23.875 </td> 
+<td> 5.375 </td> 
+<td bgcolor='red'> 4.375 </td> 
+<td> 8.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPTexistNoSubject24.sparql </td> 
+ <td> 53.625 </td> 
+<td> 25.875 </td> 
+<td> 6.0 </td> 
+<td> 5.0 </td> 
+<td> 6.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPTexistNoObject25.sparql </td> 
+ <td bgcolor='red'> 40.0 </td> 
+<td> 23.875 </td> 
+<td> 5.5 </td> 
+<td> 5.375 </td> 
+<td> 7.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPTexistNoObjectSubject26.sparql </td> 
+ <td> 54.375 </td> 
+<td> 24.25 </td> 
+<td> 5.375 </td> 
+<td> 4.5 </td> 
+<td> 6.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPTexistNoPedicate27.sparql </td> 
+ <td> 53.375 </td> 
+<td> 25.75 </td> 
+<td> 4.875 </td> 
+<td> 4.125 </td> 
+<td> 7.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTexistNoPredicateWithMatch28.sparql </td> 
+ <td> 42.875 </td> 
+<td bgcolor='red'> 23.5 </td> 
+<td> 6.25 </td> 
+<td bgcolor='red'> 6.0 </td> 
+<td> 16.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+OneMatch29.sparql </td> 
+ <td> 52.125 </td> 
+<td> 39.25 </td> 
+<td> 5.375 </td> 
+<td> 5.75 </td> 
+<td> 8.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+Selfloop30.sparql </td> 
+ <td> 51.5 </td> 
+<td> 31.375 </td> 
+<td bgcolor='red'> 6.0 </td> 
+<td bgcolor='red'> 7.125 </td> 
+<td> 6.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+CycleLengthTwo31.sparql </td> 
+ <td> 73.875 </td> 
+<td> 37.75 </td> 
+<td bgcolor='red'> 4.75 </td> 
+<td bgcolor='red'> 4.375 </td> 
+<td> 7.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+NoSubject32.sparql </td> 
+ <td> 54.25 </td> 
+<td> 24.875 </td> 
+<td> 6.0 </td> 
+<td> 4.75 </td> 
+<td> 18.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+NoObject33.sparql </td> 
+ <td bgcolor='red'> 74.875 </td> 
+<td> 24.25 </td> 
+<td> 6.0 </td> 
+<td> 5.125 </td> 
+<td> 6.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+NoObjectSubject34.sparql </td> 
+ <td> 53.375 </td> 
+<td> 24.75 </td> 
+<td> 5.25 </td> 
+<td> 4.75 </td> 
+<td> 6.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+NoPredicate35.sparql </td> 
+ <td> 52.125 </td> 
+<td> 24.375 </td> 
+<td> 5.875 </td> 
+<td> 4.625 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+PathLengthOne36.sparql </td> 
+ <td> 54.125 </td> 
+<td> 35.125 </td> 
+<td> 4.625 </td> 
+<td> 5.25 </td> 
+<td> 8.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+PathLengthtwo37.sparql </td> 
+ <td> 61.75 </td> 
+<td> 34.0 </td> 
+<td> 5.75 </td> 
+<td> 5.25 </td> 
+<td> 6.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+PathLengthFive38.sparql </td> 
+ <td> 98.5 </td> 
+<td> 38.5 </td> 
+<td> 6.125 </td> 
+<td> 4.0 </td> 
+<td> 7.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+CycleLengthTwo39.sparql </td> 
+ <td> 73.375 </td> 
+<td> 35.625 </td> 
+<td bgcolor='red'> 4.25 </td> 
+<td bgcolor='red'> 4.125 </td> 
+<td> 8.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPT+CycleLengthFive40.sparql </td> 
+ <td> 97.875 </td> 
+<td> 41.25 </td> 
+<td bgcolor='red'> 7.5 </td> 
+<td bgcolor='red'> 5.625 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarSelfloop41.sparql </td> 
+ <td> 41.25 </td> 
+<td> 33.625 </td> 
+<td> 5.75 </td> 
+<td> 5.625 </td> 
+<td> 9.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarNoSubject42.sparql </td> 
+ <td> 52.875 </td> 
+<td> 23.75 </td> 
+<td> 5.5 </td> 
+<td> 5.25 </td> 
+<td> 6.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarNoObject43.sparql </td> 
+ <td bgcolor='red'> 53.375 </td> 
+<td> 23.875 </td> 
+<td> 5.875 </td> 
+<td> 3.875 </td> 
+<td> 7.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarNoObjectSubject44.sparql </td> 
+ <td> 51.75 </td> 
+<td> 25.5 </td> 
+<td> 4.75 </td> 
+<td> 4.125 </td> 
+<td> 7.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarNoPredicate45.sparql </td> 
+ <td> 52.0 </td> 
+<td> 24.625 </td> 
+<td> 5.25 </td> 
+<td> 6.625 </td> 
+<td> 7.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarPathLengthZero46.sparql </td> 
+ <td> 41.0 </td> 
+<td> 34.0 </td> 
+<td> 5.375 </td> 
+<td> 5.375 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarPathLengthOne47.sparql </td> 
+ <td> 53.0 </td> 
+<td> 32.125 </td> 
+<td> 5.25 </td> 
+<td> 5.25 </td> 
+<td> 8.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarPathLengthTwo48.sparql </td> 
+ <td> 66.75 </td> 
+<td> 34.75 </td> 
+<td> 5.75 </td> 
+<td> 8.5 </td> 
+<td> 7.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarPathLengthFive49.sparql </td> 
+ <td> 102.5 </td> 
+<td> 39.25 </td> 
+<td> 6.5 </td> 
+<td> 5.625 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarCycleLengthTwo50.sparql </td> 
+ <td> 65.0 </td> 
+<td> 35.875 </td> 
+<td> 5.0 </td> 
+<td> 8.875 </td> 
+<td> 7.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPTstarCycleLengthFive51.sparql </td> 
+ <td> 80.375 </td> 
+<td> 40.875 </td> 
+<td> 4.75 </td> 
+<td> 4.25 </td> 
+<td> 6.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPTnegatedSelfloop52.sparql </td> 
+ <td> 20.5 </td> 
+<td> 23.875 </td> 
+<td> 4.75 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPTnegatedNoSubject53.sparql </td> 
+ <td> 29.875 </td> 
+<td> 25.375 </td> 
+<td> 4.75 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPTnegatedNoObject54.sparql </td> 
+ <td> 29.25 </td> 
+<td> 26.125 </td> 
+<td> 4.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 10.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPTnegatedNoObjectSubject55.sparql </td> 
+ <td> 29.5 </td> 
+<td> 24.75 </td> 
+<td> 4.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPTnegatedTwoPredicatesTrue56.sparql </td> 
+ <td> 16.75 </td> 
+<td> 25.5 </td> 
+<td> 4.875 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPTnegatedTwoPredicatesFalse57.sparql </td> 
+ <td> 30.75 </td> 
+<td> 23.625 </td> 
+<td> 5.125 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinvnegSelfloop58.sparql </td> 
+ <td> 20.0 </td> 
+<td> 24.875 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinvnegNoSubject59.sparql </td> 
+ <td> 31.375 </td> 
+<td> 24.125 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinvnegNoObject60.sparql </td> 
+ <td> 28.625 </td> 
+<td> 26.5 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 18.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinvnegNoObjectSubject61.sparql </td> 
+ <td> 29.75 </td> 
+<td> 27.625 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinvnegTwoPredicatesTrue62.sparql </td> 
+ <td> 21.0 </td> 
+<td> 24.75 </td> 
+<td> 4.5 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTinvnegTwoPredicatesFalse63.sparql </td> 
+ <td> 32.0 </td> 
+<td> 23.875 </td> 
+<td> 5.25 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTcombSelfloop64.sparql </td> 
+ <td> 23.375 </td> 
+<td> 23.5 </td> 
+<td> 5.125 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 9.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPTcombNoSubject65.sparql </td> 
+ <td> 28.25 </td> 
+<td> 25.0 </td> 
+<td> 5.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPTcombNoObject66.sparql </td> 
+ <td> 31.625 </td> 
+<td> 24.75 </td> 
+<td> 5.875 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 11.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPTcombNoObjectSubject67.sparql </td> 
+ <td> 31.875 </td> 
+<td> 24.75 </td> 
+<td> 5.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPTcombOnePredicateEach68.sparql </td> 
+ <td> 22.25 </td> 
+<td> 24.0 </td> 
+<td> 5.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 10.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPTcombTwoPredicatesEach69.sparql </td> 
+ <td> 18.625 </td> 
+<td bgcolor='red'> 24.0 </td> 
+<td> 6.5 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPTcombPredicatesNotExisting70.sparql </td> 
+ <td> 20.875 </td> 
+<td bgcolor='red'> 25.0 </td> 
+<td> 5.25 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPTcombFiveToOneRatio71.sparql </td> 
+ <td> 23.125 </td> 
+<td> 24.75 </td> 
+<td> 5.625 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPTcombOneToFiveRatio72.sparql </td> 
+ <td> 23.75 </td> 
+<td> 25.375 </td> 
+<td> 6.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 9.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPTcombSamePredicateBoth73.sparql </td> 
+ <td> 29.875 </td> 
+<td> 22.625 </td> 
+<td> 4.875 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 8.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPVinverseOneMatch74.sparql </td> 
+ <td> 19.0 </td> 
+<td> 24.5 </td> 
+<td> 5.0 </td> 
+<td> 5.875 </td> 
+<td> 7.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPVinverseThreeMatches75.sparql </td> 
+ <td> 16.625 </td> 
+<td> 23.875 </td> 
+<td> 5.5 </td> 
+<td> 4.625 </td> 
+<td> 6.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPVinverseSelfloop76.sparql </td> 
+ <td> 22.375 </td> 
+<td> 23.5 </td> 
+<td> 5.25 </td> 
+<td> 4.375 </td> 
+<td> 8.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPVinverseNoSubject77.sparql </td> 
+ <td> 19.0 </td> 
+<td> 25.25 </td> 
+<td> 4.5 </td> 
+<td> 4.25 </td> 
+<td> 8.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPVinverseNoPredicate78.sparql </td> 
+ <td> 18.0 </td> 
+<td> 24.125 </td> 
+<td> 4.625 </td> 
+<td> 4.25 </td> 
+<td> 8.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPVsequenceOneMatch79.sparql </td> 
+ <td> 20.375 </td> 
+<td> 27.5 </td> 
+<td> 5.375 </td> 
+<td> 4.75 </td> 
+<td> 10.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPVsequenceThreeMatches80.sparql </td> 
+ <td> 17.875 </td> 
+<td> 22.875 </td> 
+<td> 5.625 </td> 
+<td> 6.125 </td> 
+<td> 8.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPVsequenceSelfloop81.sparql </td> 
+ <td> 17.875 </td> 
+<td> 24.875 </td> 
+<td> 5.5 </td> 
+<td> 6.25 </td> 
+<td> 8.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPVsequenceCycle82.sparql </td> 
+ <td> 16.625 </td> 
+<td> 24.25 </td> 
+<td> 5.625 </td> 
+<td> 4.75 </td> 
+<td> 10.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPVsequenceNoSubject83.sparql </td> 
+ <td> 19.25 </td> 
+<td> 24.0 </td> 
+<td> 5.375 </td> 
+<td> 4.625 </td> 
+<td> 8.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPVsequenceNoPredicate84.sparql </td> 
+ <td> 22.0 </td> 
+<td> 24.75 </td> 
+<td> 4.375 </td> 
+<td> 4.5 </td> 
+<td> 8.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPValternativeOneMatch85.sparql </td> 
+ <td> 19.125 </td> 
+<td> 24.25 </td> 
+<td> 4.625 </td> 
+<td> 3.875 </td> 
+<td> 10.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPValternativeThreeMatches86.sparql </td> 
+ <td> 22.75 </td> 
+<td> 23.25 </td> 
+<td> 5.125 </td> 
+<td> 3.875 </td> 
+<td> 8.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPValternativeSelfloop87.sparql </td> 
+ <td> 21.5 </td> 
+<td> 24.125 </td> 
+<td> 5.5 </td> 
+<td> 5.0 </td> 
+<td> 8.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPValternativeNoSubject88.sparql </td> 
+ <td> 28.625 </td> 
+<td> 22.875 </td> 
+<td> 4.75 </td> 
+<td> 4.75 </td> 
+<td> 7.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPValternativeNoPredicate89.sparql </td> 
+ <td> 21.375 </td> 
+<td> 24.625 </td> 
+<td> 4.375 </td> 
+<td> 5.25 </td> 
+<td> 7.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPValternativeSamePredicate90.sparql </td> 
+ <td> 17.625 </td> 
+<td> 24.0 </td> 
+<td> 5.0 </td> 
+<td> 4.75 </td> 
+<td> 7.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPVexistTwoMatches91.sparql </td> 
+ <td> 27.375 </td> 
+<td> 31.25 </td> 
+<td> 5.25 </td> 
+<td> 4.625 </td> 
+<td> 9.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPVexistFourMatches92.sparql </td> 
+ <td> 31.25 </td> 
+<td> 31.625 </td> 
+<td> 5.75 </td> 
+<td> 5.375 </td> 
+<td> 9.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPVexistSelfloop93.sparql </td> 
+ <td> 32.5 </td> 
+<td> 31.125 </td> 
+<td> 4.625 </td> 
+<td> 4.625 </td> 
+<td> 6.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPVexistNoSubject94.sparql </td> 
+ <td> 32.375 </td> 
+<td bgcolor='yellow'> 24.5 </td> 
+<td> 4.875 </td> 
+<td> 4.75 </td> 
+<td> 6.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPVexistNoPredicate95.sparql </td> 
+ <td> 30.875 </td> 
+<td bgcolor='yellow'> 25.25 </td> 
+<td> 4.5 </td> 
+<td> 6.5 </td> 
+<td> 7.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPVexistNoPredicateSubject96.sparql </td> 
+ <td> 31.375 </td> 
+<td bgcolor='yellow'> 23.875 </td> 
+<td> 5.125 </td> 
+<td> 4.75 </td> 
+<td> 5.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPV+OneMatch97.sparql </td> 
+ <td> 39.625 </td> 
+<td> 38.375 </td> 
+<td> 5.5 </td> 
+<td> 4.875 </td> 
+<td> 10.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPV+ThreeMatches98.sparql </td> 
+ <td> 36.875 </td> 
+<td> 38.25 </td> 
+<td> 6.75 </td> 
+<td> 4.25 </td> 
+<td> 8.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPV+Selfloop99.sparql </td> 
+ <td> 39.75 </td> 
+<td> 40.75 </td> 
+<td bgcolor='yellow'> 5.625 </td> 
+<td> 5.5 </td> 
+<td> 9.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPV+NoSubject100.sparql </td> 
+ <td> 30.375 </td> 
+<td> 24.125 </td> 
+<td> 5.5 </td> 
+<td> 5.75 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPV+NoPredicate101.sparql </td> 
+ <td> 29.875 </td> 
+<td> 23.875 </td> 
+<td> 5.25 </td> 
+<td> 4.75 </td> 
+<td> 6.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPV+PathLenghtTwo102.sparql </td> 
+ <td> 55.625 </td> 
+<td> 40.375 </td> 
+<td> 5.625 </td> 
+<td> 5.125 </td> 
+<td> 6.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPV+PathLengthFive103.sparql </td> 
+ <td> 85.5 </td> 
+<td> 46.875 </td> 
+<td> 5.25 </td> 
+<td> 5.75 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPV+CycleLengthThree104.sparql </td> 
+ <td> 59.875 </td> 
+<td> 40.75 </td> 
+<td bgcolor='yellow'> 5.625 </td> 
+<td> 4.625 </td> 
+<td> 7.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPV+CycleLengthFive105.sparql </td> 
+ <td> 81.625 </td> 
+<td> 50.25 </td> 
+<td bgcolor='yellow'> 5.375 </td> 
+<td> 5.5 </td> 
+<td> 8.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPVstarFourMatches106.sparql </td> 
+ <td> 38.375 </td> 
+<td> 34.0 </td> 
+<td> 5.625 </td> 
+<td> 4.375 </td> 
+<td> 10.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPVstarSelfloop107.sparql </td> 
+ <td> 27.75 </td> 
+<td> 35.0 </td> 
+<td> 4.0 </td> 
+<td> 4.375 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPVstarNoSubject108.sparql </td> 
+ <td> 31.0 </td> 
+<td bgcolor='yellow'> 23.875 </td> 
+<td> 5.25 </td> 
+<td> 7.0 </td> 
+<td> 7.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPVstarNoPredicate109.sparql </td> 
+ <td> 31.75 </td> 
+<td bgcolor='yellow'> 24.0 </td> 
+<td> 5.625 </td> 
+<td> 4.625 </td> 
+<td> 8.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPVstarPathLengthTwo110.sparql </td> 
+ <td> 43.25 </td> 
+<td> 38.875 </td> 
+<td> 5.25 </td> 
+<td> 4.125 </td> 
+<td> 6.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPVstarPathLengthFive111.sparql </td> 
+ <td> 67.0 </td> 
+<td> 47.25 </td> 
+<td> 5.875 </td> 
+<td> 5.0 </td> 
+<td> 6.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPVstarCycleLengthThree112.sparql </td> 
+ <td> 55.625 </td> 
+<td> 48.625 </td> 
+<td> 5.75 </td> 
+<td> 5.875 </td> 
+<td> 6.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPVstarCycleLengthSix113.sparql </td> 
+ <td> 80.375 </td> 
+<td> 47.375 </td> 
+<td> 6.375 </td> 
+<td> 4.625 </td> 
+<td> 9.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPVnegatedSelfloop114.sparql </td> 
+ <td> 21.125 </td> 
+<td> 20.875 </td> 
+<td> 4.875 </td> 
+<td> 4.875 </td> 
+<td> 8.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPVnegatedNoSubject115.sparql </td> 
+ <td> 19.0 </td> 
+<td> 23.5 </td> 
+<td> 4.625 </td> 
+<td> 4.625 </td> 
+<td> 7.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPVnegatedOnePredicate116.sparql </td> 
+ <td> 19.625 </td> 
+<td> 23.5 </td> 
+<td> 4.125 </td> 
+<td> 6.0 </td> 
+<td> 7.75 </td> 
+</tr>
+
+<tr> 
+ <td> TPVnegatedTwoPredicates117.sparql </td> 
+ <td> 19.875 </td> 
+<td> 23.875 </td> 
+<td> 4.0 </td> 
+<td> 4.375 </td> 
+<td> 6.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPVnegatedNoPredicate118.sparql </td> 
+ <td> 20.25 </td> 
+<td bgcolor='yellow'> 23.75 </td> 
+<td> 4.5 </td> 
+<td> 5.375 </td> 
+<td> 9.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPVinvnegSelfloop119.sparql </td> 
+ <td> 19.875 </td> 
+<td bgcolor='red'> 24.25 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 5.25 </td> 
+<td> 13.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPVinvnegNoSubject120.sparql </td> 
+ <td> 20.75 </td> 
+<td> 24.25 </td> 
+<td> 4.5 </td> 
+<td> 7.625 </td> 
+<td> 9.25 </td> 
+</tr>
+
+<tr> 
+ <td> TPVinvnegOnePredicate121.sparql </td> 
+ <td> 19.5 </td> 
+<td bgcolor='red'> 22.5 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 5.25 </td> 
+<td> 9.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPVinvnegTwoPredicates122.sparql </td> 
+ <td> 19.5 </td> 
+<td> 22.375 </td> 
+<td> 4.25 </td> 
+<td> 4.125 </td> 
+<td> 7.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPVinvnegNoPredicates123.sparql </td> 
+ <td> 19.625 </td> 
+<td bgcolor='yellow'> 26.875 </td> 
+<td> 6.0 </td> 
+<td> 4.875 </td> 
+<td> 8.125 </td> 
+</tr>
+
+<tr> 
+ <td> TPVcombSelfloop124.sparql </td> 
+ <td> 21.75 </td> 
+<td bgcolor='red'> 29.25 </td> 
+<td> 5.5 </td> 
+<td> 6.375 </td> 
+<td> 6.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPVcombNoSubject125.sparql </td> 
+ <td> 22.875 </td> 
+<td> 24.375 </td> 
+<td> 5.25 </td> 
+<td> 5.0 </td> 
+<td> 8.875 </td> 
+</tr>
+
+<tr> 
+ <td> TPVcombOnePredicateEach126.sparql </td> 
+ <td> 22.125 </td> 
+<td bgcolor='red'> 23.375 </td> 
+<td> 5.5 </td> 
+<td> 5.875 </td> 
+<td> 7.5 </td> 
+</tr>
+
+<tr> 
+ <td> TPVcombTwoPredicates127.sparql </td> 
+ <td> 21.25 </td> 
+<td> 23.875 </td> 
+<td> 6.375 </td> 
+<td> 4.5 </td> 
+<td> 7.0 </td> 
+</tr>
+
+<tr> 
+ <td> TPVcombNoPredicate128.sparql </td> 
+ <td> 21.5 </td> 
+<td bgcolor='yellow'> 23.625 </td> 
+<td> 5.625 </td> 
+<td> 4.75 </td> 
+<td> 11.375 </td> 
+</tr>
+
+<tr> 
+ <td> TPVcombOneToFiveRatio129.sparql </td> 
+ <td> 20.25 </td> 
+<td bgcolor='red'> 28.625 </td> 
+<td> 5.375 </td> 
+<td> 5.875 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> TPVcombFiveToOneRatio130.sparql </td> 
+ <td> 19.75 </td> 
+<td> 26.125 </td> 
+<td> 5.75 </td> 
+<td> 6.5 </td> 
+<td> 7.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPTinverseOneMatch131.sparql </td> 
+ <td> 19.375 </td> 
+<td> 24.125 </td> 
+<td> 4.875 </td> 
+<td> 6.0 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPTinverseThreeMatches132.sparql </td> 
+ <td> 16.875 </td> 
+<td> 23.75 </td> 
+<td> 4.5 </td> 
+<td> 4.75 </td> 
+<td> 8.0 </td> 
+</tr>
+
+<tr> 
+ <td> VPTinverseSelfloop133.sparql </td> 
+ <td> 19.5 </td> 
+<td> 25.25 </td> 
+<td> 4.25 </td> 
+<td> 5.625 </td> 
+<td> 7.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPTinverseNoObject134.sparql </td> 
+ <td> 19.125 </td> 
+<td> 26.75 </td> 
+<td> 4.375 </td> 
+<td> 4.375 </td> 
+<td> 8.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPTinverseNoPredicate135.sparql </td> 
+ <td> 18.375 </td> 
+<td> 31.0 </td> 
+<td> 4.25 </td> 
+<td> 5.125 </td> 
+<td> 6.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPTsequenceOneMatch136.sparql </td> 
+ <td> 19.625 </td> 
+<td> 26.125 </td> 
+<td> 5.0 </td> 
+<td> 4.5 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPTsequenceThreMatches137.sparql </td> 
+ <td> 15.375 </td> 
+<td> 23.375 </td> 
+<td> 4.5 </td> 
+<td> 4.5 </td> 
+<td> 9.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPTsequenceSelfloop138.sparql </td> 
+ <td> 16.875 </td> 
+<td> 24.875 </td> 
+<td> 4.875 </td> 
+<td> 5.125 </td> 
+<td> 9.5 </td> 
+</tr>
+
+<tr> 
+ <td> VPTsequenceCycle139.sparql </td> 
+ <td> 20.75 </td> 
+<td> 23.375 </td> 
+<td> 6.0 </td> 
+<td> 5.5 </td> 
+<td> 7.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPTsequenceNoObject140.sparql </td> 
+ <td> 21.0 </td> 
+<td> 25.5 </td> 
+<td> 4.625 </td> 
+<td> 4.75 </td> 
+<td> 8.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPTsequenceNoPredicate141.sparql </td> 
+ <td> 21.625 </td> 
+<td> 24.75 </td> 
+<td> 5.0 </td> 
+<td> 4.625 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPTalternativeOneMatch142.sparql </td> 
+ <td> 18.75 </td> 
+<td> 26.875 </td> 
+<td> 4.625 </td> 
+<td> 4.0 </td> 
+<td> 7.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPTalternativeThreeMatches143.sparql </td> 
+ <td> 24.5 </td> 
+<td> 24.75 </td> 
+<td> 5.125 </td> 
+<td> 5.25 </td> 
+<td> 9.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPTalternativeSelfloop144.sparql </td> 
+ <td> 21.5 </td> 
+<td> 24.75 </td> 
+<td> 4.375 </td> 
+<td> 4.625 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPTalternativeNoObject145.sparql </td> 
+ <td> 25.375 </td> 
+<td> 23.75 </td> 
+<td> 4.75 </td> 
+<td> 5.875 </td> 
+<td> 7.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPTalternativeNoPredicate146.sparql </td> 
+ <td> 20.625 </td> 
+<td> 25.375 </td> 
+<td> 4.25 </td> 
+<td> 6.125 </td> 
+<td> 6.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPTalternativeSamePredicate147.sparql </td> 
+ <td> 17.5 </td> 
+<td> 24.375 </td> 
+<td> 4.375 </td> 
+<td> 6.25 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPTexistTwoMatches148.sparql </td> 
+ <td> 27.25 </td> 
+<td> 34.375 </td> 
+<td> 6.0 </td> 
+<td> 5.875 </td> 
+<td> 5.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPTexistFourMatches149.sparql </td> 
+ <td> 28.0 </td> 
+<td> 33.25 </td> 
+<td> 5.5 </td> 
+<td> 6.0 </td> 
+<td> 7.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPTexistSelfloop150.sparql </td> 
+ <td> 29.375 </td> 
+<td> 33.375 </td> 
+<td> 4.75 </td> 
+<td> 5.0 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPTexistNoObject151.sparql </td> 
+ <td> 28.625 </td> 
+<td bgcolor='yellow'> 22.625 </td> 
+<td> 5.25 </td> 
+<td> 4.25 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPTexistNoPredicate152.sparql </td> 
+ <td> 30.875 </td> 
+<td bgcolor='yellow'> 24.75 </td> 
+<td> 5.25 </td> 
+<td> 4.875 </td> 
+<td> 6.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPTexistNoPredicateObject153.sparql </td> 
+ <td> 31.0 </td> 
+<td bgcolor='yellow'> 23.375 </td> 
+<td> 4.375 </td> 
+<td> 4.625 </td> 
+<td> 6.5 </td> 
+</tr>
+
+<tr> 
+ <td> VPT+OneMatch154.sparql </td> 
+ <td> 35.625 </td> 
+<td> 37.875 </td> 
+<td> 5.75 </td> 
+<td> 5.875 </td> 
+<td> 7.0 </td> 
+</tr>
+
+<tr> 
+ <td> VPT+ThreeMatches155.sparql </td> 
+ <td> 41.375 </td> 
+<td> 38.625 </td> 
+<td> 5.25 </td> 
+<td> 4.5 </td> 
+<td> 8.0 </td> 
+</tr>
+
+<tr> 
+ <td> VPT+Selfloop156.sparql </td> 
+ <td> 37.0 </td> 
+<td> 43.5 </td> 
+<td bgcolor='yellow'> 5.25 </td> 
+<td> 7.0 </td> 
+<td> 9.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPT+NoObject157.sparql </td> 
+ <td> 33.5 </td> 
+<td> 24.5 </td> 
+<td> 5.5 </td> 
+<td> 7.25 </td> 
+<td> 6.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPT+NoPredicate158.sparql </td> 
+ <td> 30.25 </td> 
+<td> 23.875 </td> 
+<td> 5.875 </td> 
+<td> 4.875 </td> 
+<td> 6.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPT+PathLengthTwo159.sparql </td> 
+ <td> 48.625 </td> 
+<td> 40.75 </td> 
+<td> 7.625 </td> 
+<td> 4.875 </td> 
+<td> 6.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPT+PathLengthFive160.sparql </td> 
+ <td> 82.25 </td> 
+<td> 48.25 </td> 
+<td> 6.5 </td> 
+<td> 6.75 </td> 
+<td> 8.5 </td> 
+</tr>
+
+<tr> 
+ <td> VPT+CycleLengthThree161.sparql </td> 
+ <td> 60.875 </td> 
+<td> 42.25 </td> 
+<td bgcolor='yellow'> 5.625 </td> 
+<td> 4.875 </td> 
+<td> 6.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPT+CycleLEngthSix162.sparql </td> 
+ <td> 97.25 </td> 
+<td> 54.875 </td> 
+<td bgcolor='yellow'> 6.5 </td> 
+<td> 5.625 </td> 
+<td> 6.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPTstarFourMatches163.sparql </td> 
+ <td> 43.25 </td> 
+<td> 36.5 </td> 
+<td> 5.375 </td> 
+<td> 5.375 </td> 
+<td> 7.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPTstarSelfloop164.sparql </td> 
+ <td> 31.5 </td> 
+<td> 36.875 </td> 
+<td> 4.875 </td> 
+<td> 5.0 </td> 
+<td> 7.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPTstarNoObject165.sparql </td> 
+ <td> 31.375 </td> 
+<td bgcolor='yellow'> 23.5 </td> 
+<td> 5.125 </td> 
+<td> 5.125 </td> 
+<td> 19.0 </td> 
+</tr>
+
+<tr> 
+ <td> VPTstarNoPredicate166.sparql </td> 
+ <td> 33.625 </td> 
+<td bgcolor='yellow'> 24.625 </td> 
+<td> 5.125 </td> 
+<td> 5.375 </td> 
+<td> 7.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPTstarPathLengthTwo167.sparql </td> 
+ <td> 54.25 </td> 
+<td> 42.0 </td> 
+<td> 5.625 </td> 
+<td> 4.75 </td> 
+<td> 10.5 </td> 
+</tr>
+
+<tr> 
+ <td> VPTstarPathLengthFive168.sparql </td> 
+ <td> 87.875 </td> 
+<td> 51.375 </td> 
+<td> 6.125 </td> 
+<td> 5.875 </td> 
+<td> 10.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPTstarCycleLengthThree169.sparql </td> 
+ <td> 52.375 </td> 
+<td> 52.0 </td> 
+<td> 5.875 </td> 
+<td> 4.125 </td> 
+<td> 8.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPTstarCycleLengthSix170.sparql </td> 
+ <td> 80.0 </td> 
+<td> 55.25 </td> 
+<td> 6.5 </td> 
+<td> 6.25 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPTnegatedSelfloop171.sparql </td> 
+ <td> 20.0 </td> 
+<td> 24.0 </td> 
+<td> 4.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPTnegatedNoObject172.sparql </td> 
+ <td> 18.875 </td> 
+<td> 23.875 </td> 
+<td> 4.125 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPTnegatedOnePredicate173.sparql </td> 
+ <td> 18.0 </td> 
+<td> 25.125 </td> 
+<td> 4.75 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 8.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPTnegatedTwoPredicates174.sparql </td> 
+ <td> 19.75 </td> 
+<td> 25625 </td> 
+<td> 4.625 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 9.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPTnegatedNoPredicate175.sparql </td> 
+ <td> 20.625 </td> 
+<td bgcolor='yellow'> 25.5 </td> 
+<td> 5.625 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.0 </td> 
+</tr>
+
+<tr> 
+ <td> VPTinvnegSelfloop176.sparql </td> 
+ <td> 20.375 </td> 
+<td bgcolor='red'> 24.875 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPTinvnegNoObject177.sparql </td> 
+ <td> 20.125 </td> 
+<td> 24.75 </td> 
+<td> 4.25 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 10.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPTinvnegOnePredicate178.sparql </td> 
+ <td> 21.25 </td> 
+<td bgcolor='yellow'> 24.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 10.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPTinvnegTwoPredicates179.sparql </td> 
+ <td> 19.625 </td> 
+<td> 26.625 </td> 
+<td> 5.75 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 8.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPTinvnegNoPredicate180.sparql </td> 
+ <td> 19.0 </td> 
+<td bgcolor='yellow'> 26.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 11.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPTcombSelfloop181.sparql </td> 
+ <td> 25.125 </td> 
+<td bgcolor='red'> 29.875 </td> 
+<td> 5.875 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPTcombNoSubject182.sparql </td> 
+ <td> 22.625 </td> 
+<td> 24.0 </td> 
+<td> 5.25 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPTcombOnePredicateEach183.sparql </td> 
+ <td> 21.625 </td> 
+<td> 23.875 </td> 
+<td> 6.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.0 </td> 
+</tr>
+
+<tr> 
+ <td> VPTcombTwoPredicatesEach184.sparql </td> 
+ <td> 19.5 </td> 
+<td bgcolor='red'> 24.0 </td> 
+<td> 6.5 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 10.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPTcombNoPredicate185.sparql </td> 
+ <td> 22.5 </td> 
+<td bgcolor='yellow'> 25.875 </td> 
+<td> 5.625 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 5.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPTcombOneToFive186.sparql </td> 
+ <td> 18.375 </td> 
+<td bgcolor='red'> 29.75 </td> 
+<td> 5.625 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPTcombFiveToOne187.sparql </td> 
+ <td> 22.125 </td> 
+<td> 27.0 </td> 
+<td> 6.625 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 11.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPVinverseOneMatch188.sparql </td> 
+ <td> 18.625 </td> 
+<td> 23.625 </td> 
+<td> 4.875 </td> 
+<td> 4.75 </td> 
+<td> 7.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPVinverseThreeMatches189.sparql </td> 
+ <td> 19.75 </td> 
+<td> 25.5 </td> 
+<td> 4.5 </td> 
+<td> 5.375 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPVinverseSelfloop190.sparql </td> 
+ <td> 19.5 </td> 
+<td> 28.0 </td> 
+<td> 4.25 </td> 
+<td> 4.625 </td> 
+<td> 7.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPVinverseNoPredicate191.sparql </td> 
+ <td> 18.75 </td> 
+<td> 28.75 </td> 
+<td> 4.625 </td> 
+<td> 4.5 </td> 
+<td> 6.5 </td> 
+</tr>
+
+<tr> 
+ <td> VPVsequenceOneMatch192.sparql </td> 
+ <td> 19.0 </td> 
+<td> 27.5 </td> 
+<td> 4.75 </td> 
+<td> 4.25 </td> 
+<td> 8.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPVsequenceThreeMatches193.sparql </td> 
+ <td> 16.125 </td> 
+<td> 24.5 </td> 
+<td> 5.125 </td> 
+<td> 4.875 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPVsequenceSelfloop194.sparql </td> 
+ <td> 17.25 </td> 
+<td> 23.75 </td> 
+<td> 5.25 </td> 
+<td> 6.0 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPVsequenceCycle195.sparql </td> 
+ <td> 16.125 </td> 
+<td> 23.25 </td> 
+<td> 5.625 </td> 
+<td> 5.25 </td> 
+<td> 8.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPVsequenceNoPredicate196.sparql </td> 
+ <td> 17.625 </td> 
+<td> 23.875 </td> 
+<td> 4.875 </td> 
+<td> 6.25 </td> 
+<td> 6.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPValternativeOneMatch197.sparql </td> 
+ <td> 24.0 </td> 
+<td> 26.625 </td> 
+<td> 4.5 </td> 
+<td> 4.0 </td> 
+<td> 11.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPValternativeThreeMatches198.sparql </td> 
+ <td> 18.375 </td> 
+<td> 24.25 </td> 
+<td> 5.125 </td> 
+<td> 5.75 </td> 
+<td> 9.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPValternativeSelfloop199.sparql </td> 
+ <td> 18.5 </td> 
+<td> 24.25 </td> 
+<td> 6.0 </td> 
+<td> 6.0 </td> 
+<td> 6.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPValternativeNoPredicate200.sparql </td> 
+ <td> 19.25 </td> 
+<td> 24.125 </td> 
+<td> 4.125 </td> 
+<td> 4.25 </td> 
+<td> 7.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPValternativeSamePredicate201.sparql </td> 
+ <td> 17.375 </td> 
+<td> 22.75 </td> 
+<td> 4.75 </td> 
+<td> 4.0 </td> 
+<td> 7.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPVexistPredicateExists202.sparql </td> 
+ <td bgcolor='yellow'> 32.375 </td> 
+<td> 44.75 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.625 </td> 
+<td> 9.5 </td> 
+</tr>
+
+<tr> 
+ <td> VPVexistNoPredicate203.sparql </td> 
+ <td bgcolor='yellow'> 31.625 </td> 
+<td> 24.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.875 </td> 
+<td> 7.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPVexistSelfloop204.sparql </td> 
+ <td bgcolor='yellow'> 31.125 </td> 
+<td> 38.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.5 </td> 
+<td> 13.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPV+OneMatch205.sparql </td> 
+ <td> 43.0 </td> 
+<td> 44.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 5.625 </td> 
+<td> 10.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPV+ThreeMatches206.sparql </td> 
+ <td> 43.125 </td> 
+<td> 42.0 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 5.0 </td> 
+<td> 10.0 </td> 
+</tr>
+
+<tr> 
+ <td> VPV+Selfloop207.sparql </td> 
+ <td> 44.0 </td> 
+<td> 45.125 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 5.0 </td> 
+<td> 7.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPV+NoPredicate208.sparql </td> 
+ <td> 35.125 </td> 
+<td> 22.75 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 5.875 </td> 
+<td> 8.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPV+PathLengthTwo209.sparql </td> 
+ <td> 55.125 </td> 
+<td> 58.125 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.0 </td> 
+<td> 9.0 </td> 
+</tr>
+
+<tr> 
+ <td> VPV+PathLengthFive210.sparql </td> 
+ <td> 76.375 </td> 
+<td> 114.25 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 5.125 </td> 
+<td> 14.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPV+CycleLengthThree211.sparql </td> 
+ <td> 66.0 </td> 
+<td> 79.5 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 4.75 </td> 
+<td> 9.0 </td> 
+</tr>
+
+<tr> 
+ <td> VPV+CycleLengthSix212.sparql </td> 
+ <td> 97.5 </td> 
+<td> 180.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 5.625 </td> 
+<td> 13.0 </td> 
+</tr>
+
+<tr> 
+ <td> VPVstarFourMatches213.sparql </td> 
+ <td bgcolor='yellow'> 45.0 </td> 
+<td> 51.25 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.5 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPVstarSelfloop214.sparql </td> 
+ <td bgcolor='yellow'> 42.375 </td> 
+<td> 39.25 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.0 </td> 
+<td> 7.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPVstarNoPredicate215.sparql </td> 
+ <td bgcolor='yellow'> 29.875 </td> 
+<td bgcolor='yellow'> 22.5 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.0 </td> 
+<td> 6.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPVstarPathLengthTwo216.sparql </td> 
+ <td bgcolor='yellow'> 50.625 </td> 
+<td> 55.375 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 5.5 </td> 
+<td> 7.875 </td> 
+</tr>
+
+<tr> 
+ <td> VPVstarPathLengthFive217.sparql </td> 
+ <td bgcolor='yellow'> 91.25 </td> 
+<td> 121.125 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 9.0 </td> 
+<td> 13.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPVstarCycleLengthThree218.sparql </td> 
+ <td bgcolor='yellow'> 69.375 </td> 
+<td> 79.5 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.125 </td> 
+<td> 8.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPVstarCycleLengthSix219.sparql </td> 
+ <td bgcolor='yellow'> 93.625 </td> 
+<td> 183.125 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 8.0 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPVnegatedSelfloop220.sparql </td> 
+ <td> 20.75 </td> 
+<td> 21.875 </td> 
+<td> 6.375 </td> 
+<td> 6.875 </td> 
+<td> 8.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPVnegatedOnePredicateEach221.sparql </td> 
+ <td> 20.875 </td> 
+<td> 22.625 </td> 
+<td> 6.5 </td> 
+<td> 7.875 </td> 
+<td> 9.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPVnegatedTwoPredicatesEach222.sparql </td> 
+ <td> 22.75 </td> 
+<td> 23.5 </td> 
+<td> 6.25 </td> 
+<td> 6.125 </td> 
+<td> 9.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPVnegatedNoPredicate223.sparql </td> 
+ <td> 21.375 </td> 
+<td bgcolor='yellow'> 24.75 </td> 
+<td> 6.875 </td> 
+<td> 6.0 </td> 
+<td> 13.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPVnegatedAllPredicates224.sparql </td> 
+ <td> 22.625 </td> 
+<td> 25.875 </td> 
+<td> 6.0 </td> 
+<td> 7.125 </td> 
+<td> 9.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPVinvnegSelfloop225.sparql </td> 
+ <td> 23.0 </td> 
+<td bgcolor='red'> 24.125 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 7.875 </td> 
+<td> 12.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPVinvnegOnePredicateEach226.sparql </td> 
+ <td> 21.75 </td> 
+<td bgcolor='red'> 23.625 </td> 
+<td bgcolor='grey'> 0.0 </td> 
+<td> 6.5 </td> 
+<td> 12.5 </td> 
+</tr>
+
+<tr> 
+ <td> VPVinvnegTwoPredicatesEach227.sparql </td> 
+ <td> 20.875 </td> 
+<td bgcolor='red'> 23.125 </td> 
+<td> 6.75 </td> 
+<td> 7.25 </td> 
+<td> 10.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPVinvnegNoPredicates228.sparql </td> 
+ <td> 24.875 </td> 
+<td bgcolor='yellow'> 33.375 </td> 
+<td> 6.625 </td> 
+<td> 7.5 </td> 
+<td> 19.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPVinvnegAllPredicates229.sparql </td> 
+ <td> 21.5 </td> 
+<td> 32.625 </td> 
+<td> 6.625 </td> 
+<td> 7.625 </td> 
+<td> 16.75 </td> 
+</tr>
+
+<tr> 
+ <td> VPVcombSelfloop230.sparql </td> 
+ <td> 22.0 </td> 
+<td bgcolor='yellow'> 23.75 </td> 
+<td> 9.25 </td> 
+<td> 7.875 </td> 
+<td> 14.125 </td> 
+</tr>
+
+<tr> 
+ <td> VPVcombOnePredicateEach231.sparql </td> 
+ <td> 23.125 </td> 
+<td bgcolor='yellow'> 25.625 </td> 
+<td> 8.875 </td> 
+<td> 8.5 </td> 
+<td> 10.5 </td> 
+</tr>
+
+<tr> 
+ <td> VPVcombTwoPredicatesEach232.sparql </td> 
+ <td> 20.375 </td> 
+<td bgcolor='red'> 25.375 </td> 
+<td> 7.875 </td> 
+<td> 8.5 </td> 
+<td> 8.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPVcombNoPredicate233.sparql </td> 
+ <td> 28.0 </td> 
+<td bgcolor='yellow'> 28.125 </td> 
+<td> 9.0 </td> 
+<td> 8.625 </td> 
+<td> 11.25 </td> 
+</tr>
+
+<tr> 
+ <td> VPVcombOneToFiveRatio234.sparql </td> 
+ <td> 24.875 </td> 
+<td bgcolor='red'> 32.375 </td> 
+<td> 9.125 </td> 
+<td> 6.875 </td> 
+<td> 12.375 </td> 
+</tr>
+
+<tr> 
+ <td> VPVcombFiveToOneRatio235.sparql </td> 
+ <td> 26.75 </td> 
+<td bgcolor='yellow'> 24.125 </td> 
+<td> 8.75 </td> 
+<td> 9.125 </td> 
+<td> 9.625 </td> 
+</tr>
+
+<tr> 
+ <td> VPVcombAllPredicates236.sparql </td> 
+ <td> 24.875 </td> 
+<td> 27.75 </td> 
+<td> 8.125 </td> 
+<td> 8.25 </td> 
+<td> 15.0 </td> 
+</tr>
+
+</table> 
+</body> 
+</html> 
