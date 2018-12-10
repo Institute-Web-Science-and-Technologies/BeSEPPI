@@ -19,7 +19,8 @@ java -jar BeSEPPI.jar
 /path/to/git/BeSEPPI/Benchmark 
 /path/to/result/ 
 http://localhost:3030/ds/query 
-http://localhost:3030/ds/update http://localhost:3030/ds/data
+http://localhost:3030/ds/update 
+http://localhost:3030/ds/data
 ```
 Note that you can use any dataset, queries and reference result set for benchmarking with the benchmark suite. The directory where the benchmark is has to include a queries and a dataset subdirectory. The dataset subdirectory can hold RDF files, which will be loaded to the store. The queries subdirectory should hold queries with the ending .sparql and reference result sets with the ending .csv.
 For instance: 
